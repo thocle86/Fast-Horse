@@ -1,0 +1,176 @@
+html {
+    height: 100%;	
+}
+
+body {
+    background-image: url("/assets/images/wanted.jpg");
+    margin:0%;
+    text-align: center;
+}
+
+main {
+    min-height: calc(100vh - 70px);
+  }
+
+.title{
+    text-decoration: none;
+    font-family: 'RioGrande Striped';
+    font-size: 8vw;
+    color: #221107;
+
+}
+@font-face {
+    font-family: 'RioGrande Striped';
+    src: url('RioGrande Striped.ttf')
+}
+
+
+.horseLogo{
+    font-size: 0.2vw;
+}
+
+.containerIndex{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.textPresentation{
+    text-decoration: none;
+    font-family: 'Calligraffiti';
+    font-size:5vw;
+    color: #000000;
+    text-align: center;
+
+}
+@font-face {
+    font-family: 'Calligraffiti';
+    src: url('Calligraffiti.ttf')
+}
+.horseHome{
+    width: 80%;
+    border-radius:10%;
+}
+
+.countryForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+
+.cityForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#country{
+    font-size: 4vw;
+}
+
+#city{
+    font-size: 4vw;
+}
+
+.label{
+    text-decoration: none;
+    font-family: 'Calligraffiti';
+    font-size:5vw;
+    color: #000000;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Calligraffiti';
+    src: url('Calligraffiti.ttf')
+}
+
+#AvailableCountry{
+    text-decoration: none;
+    font-family: 'Calligraffiti';
+    font-size:4vw;
+    color: #000000;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Calligraffiti';
+    src: url('Calligraffiti.ttf')
+
+}
+
+#AvailableCity{
+    text-decoration: none;
+    font-family: 'Calligraffiti';
+    font-size:4vw;
+    color: #000000;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Calligraffiti';
+    src: url('Calligraffiti.ttf')
+
+}
+
+#AvailableHorse{
+    text-decoration: none;
+    font-size:5vw;
+    color: #000000;
+    text-align: center;
+}
+
+
+.submit{
+    text-decoration: none;
+    font-family: 'Calligraffiti';
+    font-size:3vw;
+    color: #000000;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Calligraffiti';
+    src: url('Calligraffiti.ttf')
+}
+
+#message{
+    text-decoration: none;
+    font-family: 'Calligraffiti';
+    font-size:4vw;
+    color: #000000;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Calligraffiti';
+    src: url('Calligraffiti.ttf')
+}
+
+.returnIndex{
+    font-family: 'Calligraffiti';
+    font-size:4vw;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Calligraffiti';
+    src: url('Calligraffiti.ttf')
+}
+
+.footer {
+    height: 50px;
+    text-align: center;
+    margin-top: 5%;
+    text-decoration: none;
+    font-family: 'Calligraffiti';
+    color: #000000;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Calligraffiti';
+    src: url('Calligraffiti.ttf')
+}

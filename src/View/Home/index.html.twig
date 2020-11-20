@@ -1,0 +1,65 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <header>
+        <h1 ><img class="horseLogo" src="/assets/images/horse.png"><a href="/../" class= "title">Fast Horse Rental</a></h1>
+    </header>
+
+    <main>
+        <div class="containerIndex">
+            <img src="/assets/images/backgroundImage.jpg" class="horseHome" alt="horses image">
+        </div>
+
+        <p class="textPresentation">Tired of everyday life?<br>Do you thirst for freedom and dream of the great green plains,
+        the desert or rocky landscapes? <br>Discover our horse rental service. You have the possibility to rent a horse in different countries.<br>
+        Be free, use our services !!</p>
+
+        {% if message is defined %}
+        {% else %}
+            {% if cities is defined %}
+                {{ countrySelected }}
+            {% else %}
+                <div class="countryForm">
+                    <form method="post" action="/home/city">
+                        <label class="label" for="country" >Choose your country</label><br>
+                        <select name="country" id="country">
+                            <option value="">--Please choose an option--</option>
+                            {% for country in countries %}
+                                <option value="{{ country }}">{{ country }}</option>
+                            {% endfor %}
+                        </select>
+                        <input type="submit" id="selectCountry" class="submit" value="hiiiiha!!!">
+                    </form>
+                </div>
+            {% endif %}
+        {% endif %}
+
+        {% if message is defined %}
+        {% else %}
+        <div class="cityForm">
+            <form method="post" action="/home/horses">
+                <label class="label" for="city" >Choose your city</label><br>
+                <select name="city" id="city">
+                    <option value="">--Please choose an option--</option>
+                    {% for city in cities %}
+                        <option value="{{ city }}">{{ city }}</option>
+                    {% endfor %}
+                </select>
+                <input type="submit" class="submit" id="selectCity" value="hiiiiha!!!">
+            </form>
+        </div>
+        {% endif %}
+
+        {% if message is defined %}
+            <h2>In {{ citySelected }}</h2>
+            <p id="message">{{ message }}</p>
+            <a href="/home/index" class="returnIndex">Search a new horse!</a>
+        {% endif %}
+    </main>
+
+    <footer>
+        <h2 class="footer">Legal Notices</h2>
+    </footer>
+
+{% endblock %}

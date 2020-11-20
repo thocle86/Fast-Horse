@@ -1,0 +1,30 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+  <header>
+        <h1 ><img class="horseLogo" src="/assets/images/horse.png"><a href="/../" class= "title">Fast Horse Rental</a></h1>
+    </header>
+    <main>
+
+        <div class="containerIndex">
+            <img src="/assets/images/travel.png" class="horseHome" alt="horses image">
+        </div>
+        <p class="textPresentation">«I'm a poor lonesome cow-boy <br>and a long long way from home»</p>
+
+
+        {% if horses is defined %}
+            <p id="AvailableHorse">There are {{ horses }} availables horses!</p>
+        {% endif %}
+        {% if message is defined %}
+            <p id="message">{{ message }}</p>
+            <a href="/home/index" class= "returnIndex">Search a new horse!</a>
+        {% endif %}
+
+    </main>
+
+    <footer>
+        <h2 class="footer">Legal Notices</h2>
+    </footer>        
+    
+    {% endblock %}
